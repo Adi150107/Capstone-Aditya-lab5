@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodie - Premium Food Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <nav class="navbar">
+    <div class="logo"><span></span> Foodi!</div>
+    
+    <div class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#promos">Offers</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#app">Mobile App</a>
+    </div>
+
+    <div class="auth-buttons">
+      <button class="btn login">Log In</button>
+      <button class="btn signup">Sign Up</button>
+    </div>
+
+    <label for="menu-toggle" class="menu-icon">☰</label>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#promos">Offers</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#app">Download App</a>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>Authentic food <br><span>delivered hot.</span></h1>
+      <p>Experience the finest local restaurants delivered to your doorstep with zero-contact delivery.</p>
+      <div class="hero-buttons">
+        <button class="cta-btn">Order Now</button>
+        <button class="cta-btn" style="background: #fff; color: #333;">View Menu</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="image/hero.png" alt="Hero Food">
+    </div>
+  </header>
+
+  <section class="filter-section" id="menu">
+    <h2 class="section-title">Our Menu</h2>
+
+    <input type="radio" name="filter" id="filter-all" class="filter-radio" checked>
+    <input type="radio" name="filter" id="filter-pizza" class="filter-radio">
+    <input type="radio" name="filter" id="filter-burgers" class="filter-radio">
+    <input type="radio" name="filter" id="filter-sushi" class="filter-radio">
+    <input type="radio" name="filter" id="filter-indian" class="filter-radio">
+
+    <div class="filter-controls">
+      <label for="filter-all" class="filter-label">All</label>
+      <label for="filter-pizza" class="filter-label">Breakfast</label>
+      <label for="filter-burgers" class="filter-label">Snacks</label>
+      <label for="filter-sushi" class="filter-label">Lunch</label>
+      <label for="filter-indian" class="filter-label">Dinner</label>
+    </div>
+
+    <div class="restaurant-grid">
+      
+      <div class="card" data-category="pizza">
+        <img src="image/dosa.jpg" alt="Pizza" class="card-img">
+        <input type="checkbox" id="like1" class="like-toggle">
+        <label for="like1" class="like-label">♥</label>
+        
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Masala Dosa</h3>
+            <span class="rating">4.9</span>
+          </div>
+            <p class="tags">South Indian • Crispy</p>
+          <div class="meta">
+            <span class="time">🕒 20-30 min</span>
+            <span>$0 Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="burgers">
+        <img src="image/tikka.jpg" alt="Burger" class="card-img">
+        <input type="checkbox" id="like2" class="like-toggle">
+        <label for="like2" class="like-label">♥</label>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Paneer Tikka</h3>
+            <span class="rating">4.7</span>
+          </div>
+            <p class="tags">Grilled • Spicy</p>
+          <div class="meta">
+            <span class="time">🕒 15-25 min</span>
+            <span>$1.99 Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="sushi">
+        <img src="image/dal.jpg" alt="Sushi" class="card-img">
+        <input type="checkbox" id="like3" class="like-toggle">
+        <label for="like3" class="like-label">♥</label>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Dal Makhni</h3>
+            <span class="rating">4.8</span>
+          </div>
+            <p class="tags">North Indian • Creamy</p>
+          <div class="meta">
+            <span class="time">🕒 30-45 min</span>
+            <span>$2.99 Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="indian">
+        <img src="image/chicken.jpeg" alt="Indian" class="card-img">
+        <input type="checkbox" id="like4" class="like-toggle">
+        <label for="like4" class="like-label">♥</label>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Handi Chicken</h3>
+            <span class="rating">4.6</span>
+          </div>
+            <p class="tags">Mughlai • Spicy</p>
+          <div class="meta">
+            <span class="time">🕒 25-40 min</span>
+            <span>$0 Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="pizza">
+        <img src="image/chole.jpg" alt="Pizza" class="card-img">
+        <input type="checkbox" id="like5" class="like-toggle">
+        <label for="like5" class="like-label">♥</label>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Chole Bhature</h3>
+            <span class="rating">4.5</span>
+          </div>
+          <p class="tags">North Indian • Spicy</p>
+          <div class="meta">
+            <span class="time">🕒 35-45 min</span>
+            <span>$0 Delivery</span>
+          </div>
+        </div>
+      </div>
+
+       <div class="card" data-category="burgers">
+        <img src="image/vadapav.png" alt="Burger" class="card-img">
+        <input type="checkbox" id="like6" class="like-toggle">
+        <label for="like6" class="like-label">♥</label>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>vadapav</h3>
+            <span class="rating">4.8</span>
+          </div>
+            <p class="tags">Street Food • Spicy</p>
+          <div class="meta">
+            <span class="time">🕒 20-30 min</span>
+            <span>$1.49 Delivery</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="promos" id="promos">
+    <h2 class="section-title">Promo Offers</h2>
+    <div class="container">
+      <div class="promo-grid">
+        <div class="promo-card">
+          <span class="promo-icon">🎉</span>
+          <div class="promo-info">
+            <h4>Get 30% OFF</h4>
+            <p>On your first order with code: HELLO30</p>
+          </div>
+        </div>
+        <div class="promo-card">
+          <span class="promo-icon">🚚</span>
+          <div class="promo-info">
+            <h4>Free Delivery</h4>
+            <p>On all orders above $20 this week.</p>
+          </div>
+        </div>
+        <div class="promo-card">
+          <span class="promo-icon">🍔</span>
+          <div class="promo-info">
+            <h4>BOGO Deals</h4>
+            <p>Buy 1 Get 1 Free on Burgers every Friday.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="container">
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <img src="image/review1.jpg" alt="Customer 1" class="testimonial-img">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Foodie makes ordering food so easy and quick! The delivery is always on time and the food is hot."</p>
+          <div class="testimonial-name">Sarah M.</div>
+        </div>
+        <div class="testimonial-card">
+          <img src="image/review2.jpg" alt="Customer 2" class="testimonial-img">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Great selection of restaurants and amazing offers. Highly recommend to all food lovers!"</p>
+          <div class="testimonial-name">James L.</div>
+        </div>
+        <div class="testimonial-card">
+          <img src="image/review3.jpg" alt="Customer 3" class="testimonial-img">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The app is super user-friendly and the customer support is fantastic. Love Foodie!"</p>
+          <div class="testimonial-name">Priya S.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-download" id="app">
+    <div class="app-text">
+      <h2>Foodi! in your pocket.</h2>
+      <p>Download our app for live tracking, exclusive mobile-only offers, and faster checkout.</p>
+      <div class="app-buttons">
+        <img src="image/playstore.svg" alt="Google Play">
+        <img src="image/apple.svg" alt="App Store">
+      </div>
+    </div>
+    <div class="app-img">
+      <img src="image/app.png" alt="Phone App">
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 1rem;"><span>🍕</span> Foodi!</div>
+          <p style="color: #666; font-size: 0.9rem;">Delivering happiness to your doorstep since 2007.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social</h4>
+          <ul>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Foodie Technologies Inc.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
